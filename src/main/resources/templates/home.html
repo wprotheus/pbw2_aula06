@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt" xmlns="http://www.w3.org/1999/html">
+<head>
+     <meta charset="UTF-8">
+     <title>PBW2 - Aula06</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+           integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+           crossorigin="anonymous">
+</head>
+<body class="container">
+<h1>Homepage</h1><br><br>
+<hr>
+<h2>Aula 06 - Relacionamentos</h2>
+<table class="table" th:border="1">
+     <thead>
+     <tr>
+          <th>Vendas</th>
+          <th>Todas as Pessoas</th>
+          <th>Pessoas Físicas</th>
+          <th>Pessoas Jurídicas</th>
+     </tr>
+     </thead>
+     <tr>
+          <td><a th:href="@{/vendas/list}">Listar as Vendas</a></td>
+          <td><a th:href="@{/pessoas/list}">Listar Todas as Pessoas</a></td>
+          <td><a th:href="@{/pessoas/fisicas}">Listar Pessoas Físicas</a></td>
+          <td><a th:href="@{/pessoas/juridicas}">Listar Pessoas Jurídicas</a></td>
+     </tr>
+<!--     <tr>-->
+<!--          <td><a th:href="@{/vendas/form}">Listar</a></td>-->
+<!--     </tr>-->
+</table>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+</html>

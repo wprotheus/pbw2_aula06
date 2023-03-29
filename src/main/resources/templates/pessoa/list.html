@@ -13,21 +13,21 @@
 <br>
 <!--<form th:action="@{/pessoa/lista}" method="get">-->
 <table class="table" th:border="1">
-     <thead th:if="${tabela == 'all'}">
-     <tr>
-          <th>Quantidade</th>
-          <th>ID da Pessoa</th>
-          <th>Nome da Pessoa</th>
-          <th>CPF/CNPJ</th>
-     </tr>
-     </thead>
-     <tr th:each="p, iterStat : ${pessoas}"
-         th:class="${iterStat.even == true ? 'text-primary' : 'text-success'}">
-          <td th:text="${iterStat.count}"></td>
-          <td th:text="${p.id}"></td>
-          <td th:text="${p.nome}"></td>
-          <td th:text="${pessoas.toArray()}"></td>
-     </tr>
+<!--     <thead th:if="${tabela == 'all'}">-->
+<!--     <tr>-->
+<!--          <th>Quantidade</th>-->
+<!--          <th>ID da Pessoa</th>-->
+<!--          <th>Nome da Pessoa</th>-->
+<!--          <th>CPF/CNPJ</th>-->
+<!--     </tr>-->
+<!--     </thead>-->
+<!--     <tr th:each="p, iterStat : ${pessoas}"-->
+<!--         th:class="${iterStat.even == true ? 'text-primary' : 'text-success'}">-->
+<!--          <td th:text="${iterStat.count}"></td>-->
+<!--          <td th:text="${p.id}"></td>-->
+<!--          <td th:text="${p.nome}"></td>-->
+<!--          <td th:text="${pessoas.toArray()}"></td>-->
+<!--     </tr>-->
      <thead th:if="${tabela == 'pf'}">
      <tr>
           <th>Quantidade</th>

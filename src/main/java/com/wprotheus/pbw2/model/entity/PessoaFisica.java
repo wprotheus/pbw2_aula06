@@ -5,7 +5,8 @@ import org.springframework.format.annotation.NumberFormat;
 import org.springframework.validation.annotation.Validated;
 
 @Entity
-//@DiscriminatorValue("F")
+@DiscriminatorValue("F")
+//@PrimaryKeyJoinColumn(name = "pessoa_id")
 public class PessoaFisica extends Pessoa
 {
 	private String cpf;  //	CPF: (^\d{3}\x2E\d{3}\x2E\d{3}\x2D\d{2}$)

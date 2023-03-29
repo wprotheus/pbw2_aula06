@@ -6,12 +6,16 @@ import java.io.Serializable;
 import java.util.List;
 
 @Entity
-@Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
+@DiscriminatorColumn(name = "tipo")
+//@Inheritance(strategy = InheritanceType.JOINED)
+//@Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
 public abstract class Pessoa implements Serializable
 {
 	@Id
-	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "inc")
-	@GenericGenerator(name = "inc", strategy = "increment")
+//	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "inc")
+//	@GenericGenerator(name = "inc", strategy = "increment")
+	@GeneratedValue
 	private Long id;
 	private String nome;
 

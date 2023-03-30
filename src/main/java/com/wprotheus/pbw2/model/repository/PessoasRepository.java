@@ -12,11 +12,12 @@ public class PessoasRepository
 	@PersistenceContext
 	private EntityManager em;
 
-//	public List<Pessoa> pessoaList()
-//	{
-//		Query query = em.createQuery("from Pessoa");
-//		return query.getResultList();
-//	}
+	public List<Pessoa> pessoaList()
+	{
+		Query query = em.createQuery("from Pessoa");
+		return query.getResultList();
+	}
+
 	public List<Pessoa> pessoaListCpf()
 	{
 		Query query = em.createQuery("from PessoaFisica");

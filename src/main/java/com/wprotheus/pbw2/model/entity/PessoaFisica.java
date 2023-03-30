@@ -2,9 +2,11 @@ package com.wprotheus.pbw2.model.entity;
 
 import jakarta.persistence.*;
 import org.springframework.format.annotation.NumberFormat;
+import org.springframework.stereotype.Component;
 import org.springframework.validation.annotation.Validated;
 
 @Entity
+@Component
 @DiscriminatorValue("F")
 //@PrimaryKeyJoinColumn(name = "pessoa_id")
 public class PessoaFisica extends Pessoa

@@ -2,10 +2,13 @@ package com.wprotheus.pbw2.model.entity;
 
 import jakarta.persistence.*;
 import org.hibernate.annotations.GenericGenerator;
+import org.springframework.stereotype.Component;
+
 import java.io.Serializable;
 import java.util.List;
 
 @Entity
+@Component
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 @DiscriminatorColumn(name = "tipo")
 //@Inheritance(strategy = InheritanceType.JOINED)

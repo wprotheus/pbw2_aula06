@@ -1,12 +1,16 @@
 package com.wprotheus.pbw2.model.entity;
 
 import jakarta.persistence.*;
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
 
 import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
+@Scope("session")
+@Component
 @Entity
 public class Venda implements Serializable
 {

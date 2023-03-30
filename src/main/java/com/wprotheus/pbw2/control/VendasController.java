@@ -4,11 +4,13 @@ import com.wprotheus.pbw2.model.entity.Venda;
 import com.wprotheus.pbw2.model.repository.VendasRepository;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
+@Scope("request")
 @Transactional
 @Controller
 @RequestMapping("vendas")

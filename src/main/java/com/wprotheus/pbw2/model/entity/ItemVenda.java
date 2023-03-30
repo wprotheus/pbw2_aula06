@@ -1,10 +1,12 @@
 package com.wprotheus.pbw2.model.entity;
 
 import jakarta.persistence.*;
+import org.springframework.stereotype.Component;
 
 import java.io.Serializable;
 
 @Entity
+@Component
 public class ItemVenda implements Serializable
 {
 	@Id

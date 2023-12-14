@@ -17,14 +17,14 @@ public class PessoasController
 	@Autowired
 	PessoasRepository pessoasRepository;
 
-//	@GetMapping("/list")
-//	public ModelAndView listar(ModelMap model)
-//	{
-//		model.addAttribute("pessoas", pessoasRepository.pessoaList());
-//		model.addAttribute("titulo", "Lista de Todas as Pessoas");
-//		model.addAttribute("tabela", "all");
-//		return new ModelAndView("/pessoa/list", model);
-//	}
+	@GetMapping("/list")
+	public ModelAndView listar(ModelMap model)
+	{
+		model.addAttribute("pessoas", pessoasRepository.pessoaList());
+		model.addAttribute("titulo", "Lista de Todas as Pessoas");
+		model.addAttribute("tabela", "all");
+		return new ModelAndView("/pessoa/list", model);
+	}
 
 	@GetMapping("/juridicas")
 	public ModelAndView listarCnpj(ModelMap model)

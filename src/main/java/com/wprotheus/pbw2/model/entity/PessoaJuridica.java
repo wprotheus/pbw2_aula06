@@ -1,8 +1,10 @@
 package com.wprotheus.pbw2.model.entity;
 
 import jakarta.persistence.*;
+import org.springframework.stereotype.Component;
 
 @Entity
+@Component
 @DiscriminatorValue("J")
 //@PrimaryKeyJoinColumn(name = "pessoa_id")
 public class PessoaJuridica extends Pessoa
